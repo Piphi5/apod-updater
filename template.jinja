@@ -1,6 +1,10 @@
 <html>
   <div>
+    {% if "www.youtube" in url %}
+    <iframe width="1280" height="720" src="{{url}}"></iframe>
+    {% else %}
     <img src="{{url}}"}></img>
+    {% endif %}
   </div>
   <p>
     Copyright: {{copyright}}
